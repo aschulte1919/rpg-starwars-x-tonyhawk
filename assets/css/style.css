@@ -1,0 +1,189 @@
+/*---------------------*/
+
+/* Body and background */
+
+/*---------------------*/
+
+body {
+  background-color: rgba(214, 214, 214, 0.959);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.characterWrapper {
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#gameMessage {
+  text-align: center;
+  font-size: 16px;
+}
+
+#choose-enemy-button {
+  visibility: hidden;
+}
+
+#restart-button {
+  visibility: hidden;
+}
+
+#turn-counter {
+  font-size: 150%;
+}
+
+.head-logo {
+  height: 40px;
+}
+
+#hawkHead {
+  padding-top: 40px;
+}
+
+#X {
+  text-align: center;
+  padding-top: 80px;
+}
+
+#instruction-section {
+  padding-bottom: 50px;
+}
+.section-title{
+  text-align: center;
+}
+
+/*---------------------*/
+
+/* Character rendering */
+
+/*---------------------*/
+
+.character {
+  width: 153px;
+  margin: 0px 40px 0px 40px;
+  cursor: pointer;
+  display: inline-block;
+  padding-bottom: 40px;
+}
+
+.character img {
+  border: 0 none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+}
+
+.character-name {
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 30px;
+  font-family: 'Montserrat', cursive;
+  font-size: 20px;
+}
+
+.character-health {
+  text-align: center;
+}
+
+/*---------------------*/
+
+/*      Fighting       */
+
+/*---------------------*/
+
+.attack {
+  text-align: center;
+}
+
+.action {
+  margin: 15px 0px;
+  padding-left: 100px;
+}
+
+#attack-button {
+  position: relative;
+  visibility: hidden;
+  text-align: center;
+}
+
+#fight {
+  text-align: center;
+}
+
+.btn {
+  text-align: center;
+  background: #000;
+  color: #DBD2C6;
+}
+
+.enemy {
+  width: 153px;
+  margin: 5px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: blueviolet;
+}
+
+#attacker {
+  padding: 5px;
+  text-align: center;
+}
+
+.target-enemy {
+  text-align: center;
+  color: white;
+}
+
+/*---------------------*/
+
+/* Available Oponents  */
+
+/*---------------------*/
+
+#available-to-attack-section {
+  position: relative;
+  left: 30%;
+}
+
+#available-to-attack-section img {
+  height: 100px;
+}
+
+/*---------------------*/
+
+/*      Defender       */
+
+/*---------------------*/
+
+#defender-name {
+  text-align: center;
+}
+
+#defender-image {
+  padding: 0px 16px;
+  margin: 3px 0px;
+}
+
+#defender-health {
+  text-align: center;
+}
+
+/*---------------------*/
+
+/*   Media Queries     */
+
+/*---------------------*/
+
+@media only screen and (max-device-width: 768px) {
+  .character {
+    display: block;
+    height: 150px;
+  }
+  #gameMessage {
+    font-size: 12px;
+  }
+}
